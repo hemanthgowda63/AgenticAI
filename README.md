@@ -6,10 +6,11 @@
 
 ## 📅 Daily Learning Log Tracker
 
-| Day | Date | Topic | Category | Notes |
-|:---:|:---:|:---|:---:|:---:|
-| **Day 01** | 2026-11-05 | [Introduction to Agentic AI: Passive LLMs to Autonomous Agents](daily-logs/day-01-introduction-to-agentic-ai.md) | Fundamentals | ✅ Complete |
-| **Day 02** | 2026-11-06 | [Tool Calling & Function Calling Mechanics](daily-logs/day-02-tool-calling-and-function-calling.md) | Fundamentals | ✅ Complete |
+| Day | Date | Topic | Category | Runnable Code | Notes |
+|:---:|:---:|:---|:---:|:---:|:---:|
+| **Day 01** | 2026-11-05 | [Introduction to Agentic AI: Passive LLMs to Autonomous Agents](daily-logs/day-01-introduction-to-agentic-ai.md) | Fundamentals | — | ✅ Complete |
+| **Day 02** | 2026-11-06 | [Tool Calling & Function Calling Mechanics](daily-logs/day-02-tool-calling-and-function-calling.md) | Fundamentals | — | ✅ Complete |
+| **Day 03** | 2026-11-07 | [The ReAct Pattern & Agent Prompt Engineering](daily-logs/day-03-react-pattern-and-agent-prompting.md) | Fundamentals | [`code/day_03_react_pattern`](code/day_03_react_pattern/) | ✅ Complete |
 
 ---
 
@@ -18,7 +19,7 @@
 ### 📍 Phase 1: Core Fundamentals & Patterns
 - **Day 01:** Introduction to Agentic AI & Autonomous Loops ✅
 - **Day 02:** Tool Calling & Function Calling Mechanics (JSON Schema, Pydantic) ✅
-- **Day 03:** The ReAct (Reason + Act) Pattern & Prompt Engineering for Agents
+- **Day 03:** The ReAct (Reason + Act) Pattern & Prompt Engineering for Agents ✅
 - **Day 04:** Planning Strategies (Plan-and-Solve, Decomposition, Chain-of-Thought)
 - **Day 05:** Self-Reflection, Self-Correction & Critique Loops
 
@@ -45,15 +46,26 @@
 
 ```
 AgenticAI/
+├── .gitignore
 ├── README.md               # Overview, progress tracker & roadmap
+├── code/                   # Runnable code implementations & demos
+│   └── day_03_react_pattern/
+│       ├── agent.py        # ReAct agent loop implementation
+│       ├── tools.py        # Tool implementations (Calculator, Search)
+│       └── demo.py         # Multi-step reasoning demonstration
 └── daily-logs/             # Daily comprehensive learning logs
     ├── template.md         # Template for each day's entry
     ├── day-01-introduction-to-agentic-ai.md
-    └── day-02-tool-calling-and-function-calling.md
+    ├── day-02-tool-calling-and-function-calling.md
+    └── day-03-react-pattern-and-agent-prompting.md
 ```
 
 ---
 
-## ⚙️ Automated Daily Push
+## ⚙️ Automated Daily Push & Contribution Cadence
 
-This repository is automatically updated daily via a scheduled Antigravity agent automation (`daily-agentic-ai-push`) running every evening at 7:00 PM (Asia/Kolkata). Each run creates the next day's technical deep dive, updates the tracker, and commits/pushes changes to GitHub.
+This repository is updated daily with a **minimum of 2+ contributions per day**:
+1. **Contribution 1:** Runnable Python code implementations, tools, and demos under `code/`.
+2. **Contribution 2:** In-depth technical learning logs under `daily-logs/` with architectural diagrams and updated tracker in `README.md`.
+
+Powered by an automated Antigravity agent schedule (`daily-agentic-ai-push`).
